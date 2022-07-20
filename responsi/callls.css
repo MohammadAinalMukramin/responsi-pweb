@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+ 
+   }
+   h1{
+       font-size: 40px;
+       font-weight: 900px;
+       font-family: arial;
+       color: #fff;
+       margin-top: 60px;
+       text-align: center;
+   }
+ 
+   .container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 14px;
+    padding-bottom: 20px;
+    width: 320px;
+ 
+   }
+   .display {
+    width: 100%;
+    height: 60px;
+    padding: 40px 0;
+    background: linear-gradient(to right, #000000 , #FFFFFF );
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+   }
+   .buttons {
+    padding: 20px 20px 0 20px;
+   }
+   .row {
+    width: 280px;
+    float: left;
+   }
+   input[type=button] {
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    margin: 5px;
+    box-sizing: border-box;
+    background: #00FFFF;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #FFFF00;
+    cursor: pointer;
+ 
+   }
+   input[type=text] {
+    width: 270px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    color: #FFFF00;
+    text-align: right;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 25px;
+ 
+   }
+   .red {
+   background: linear-gradient(to right, #ffc371 , #ff5f6d ) !important;
+    color: #00FFFF !important;
+ 
+   }
+
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.containercalender {
+  width: 100%;
+  height: 100vh;
+  background-color: #00FFFF;
+  color: #24ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 45rem;
+  height: 52rem;
+  background-color: #C0C0C0;
+ 
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #167e56;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+ 
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #ff24ff;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #ebebeb;
+}
